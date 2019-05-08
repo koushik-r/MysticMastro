@@ -97,23 +97,23 @@ h1{
 
 .btn-full{
 	background-color: transparent;
-	color: #ff;
+	color: #bf55ec;
 	margin-right: 15px;
-	border: 1px solid black;
+	border: 1px solid #bf55ec;
 }
 
 .btn-full:hover{
-	background-color: #ff;
+	background-color: #fff;
 }
 
 .btn-nav{
 	background-color: transparent;
-	color: #ff;
-	border: 1px solid #ff;
+	color: #fff;
+	border: 1px solid #fff;
 }
 
 .btn-nav:hover{
-	background-color: black
+	background-color: #bf55ec;
 }
 
 
@@ -126,4 +126,49 @@ h1{
 	25%{color: blue;}
 	50%{color: yellow;}
 	100%{color: green;}
+}
+
+
+.mobile-icon{display: none;}
+
+
+/*//////// Responsive queries /////////*/
+
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 695px){
+	h1{font-size: 180%;}
+
+	.main-nav{display: none;}
+
+	.mobile-icon{ display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+        margin-right: 20px;
+	}
+
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.btn-full{
+		margin-bottom: 20px;
+	}
+
+	h1{font-size: 160%;}
 }
